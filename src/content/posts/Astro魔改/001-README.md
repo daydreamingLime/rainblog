@@ -4,16 +4,16 @@ description: 这是一篇关于 Kael 博客的介绍和安装使用方法
 published: 2025-12-06
 tags: [博客, Astro]
 category: Astro魔改
+draft: false
+lang: "zh_CN"
 ---
 
-
-[**🖥️ Kael Demo**](https://zayck-demo.pages.dev)
-[**🖥️ 我的博客**](https://zayck.pages.dev)
-
+**[🖥️ Kael Demo](https://zayck-demo.pages.dev)**
+**[🖥️ 我的博客](https://zayck.pages.dev)**
 
 ## 📷 预览
 
-![image.png](https://zayck-img.pages.dev/file/1765111758854_image.png)
+image.png
 
 ## ✨ 特点
 
@@ -25,9 +25,10 @@ category: Astro魔改
 - ✅ RSS 订阅支持
 - 🛠️ 博客易上手
   - 只需在 `Kael.config.yaml` 配置你的博客内容
-- 🛠️ 本博客基于 [RyuChan](https://github.com/xz131714/RyuChan) 主题下进行修改  
+- 🛠️ 本博客基于 [RyuChan](https://github.com/xz131714/RyuChan) 主题下进行修改
 
 ## 📝 功能新增和修改（作者：Zayck）
+
 - ✅ 修复**搜索功能**，精确呈现文章标题以及自动删除搜索历史
 - ✅ 修改**导航栏背景**，由原来的毛玻璃透明效果改为纯色
 - ✅ 修改导航栏的**搜索框位置**，让其贴近右边的光暗调节按钮
@@ -50,24 +51,25 @@ category: Astro魔改
 - ✅ 修改**license组件**间距
 - ✅ 修改**鼠标样式**
 
-
 ## 😅 计划中……(期待大佬的参与)
+
 - ❌ 动画效果：博客内跳转页面时太单调，想添加一些丝滑的过渡动画
 - ❌ ……
 
-
 ## ✒️ 文章信息
 
-|    名称     |   含义   | 是否必要 |
-| :---------: | :------: | :------: |
-|    title    | 文章标题 |    是    |
-| description | 文章简介 |    是    |
-|   pubDate   | 文章日期 |    是    |
-|    image    | 文章封面 |    否    |
-| categories  | 文章分类 |    否    |
-|    tags     | 文章标签 |    否    |
-|    badge    | 文章徽标 |    否    |
-|    draft    | 草稿状态 |    否    |
+
+| 名称          | 含义   | 是否必要 |
+| ----------- | ---- | ---- |
+| title       | 文章标题 | 是    |
+| description | 文章简介 | 是    |
+| pubDate     | 文章日期 | 是    |
+| image       | 文章封面 | 否    |
+| categories  | 文章分类 | 否    |
+| tags        | 文章标签 | 否    |
+| badge       | 文章徽标 | 否    |
+| draft       | 草稿状态 | 否    |
+
 
 > [!TIP]
 >
@@ -82,25 +84,25 @@ category: Astro魔改
 npm i -g pnpm
 ```
 
-2. 克隆项目
+1. 克隆项目
 
 ```sh
 git clone https://github.com/zayck/Kael.git Kael
 ```
 
-3. 进入项目文件夹
+1. 进入项目文件夹
 
 ```sh
 cd Kael
 ```
 
-4. 安装依赖
+1. 安装依赖
 
 ```sh
 pnpm i
 ```
 
-5. 调试、运行项目
+1. 调试、运行项目
 
 **首次运行或更新内容后**，请先执行 `search:index` 来生成搜索索引：
 
@@ -204,7 +206,7 @@ site:
   language: zh # 设置为 "zh" 使用中文，"en" 使用英文
 ```
 
-2. 通过 `src/i18n/translations.yaml` 文件管理所有界面文本翻译：
+1. 通过 `src/i18n/translations.yaml` 文件管理所有界面文本翻译：
 
 ```yaml
 en: # 英文翻译
@@ -237,13 +239,12 @@ bash Kael.update.sh
 
 该脚本将：
 
-1.  **克隆最新版本** 的 Kael 仓库。
-2.  **安全地更新** 你的项目文件，根据 `.updateignore` 文件添加和覆盖文件。
-3.  **智能地删除** 官方仓库中已移除的文件，而不会影响你忽略的文件。
-4.  **清理** 任何残留的空文件夹和临时文件。
-5.  使用 `pnpm` **安装或更新** 依赖项。
+1. **克隆最新版本** 的 Kael 仓库。
+2. **安全地更新** 你的项目文件，根据 `.updateignore` 文件添加和覆盖文件。
+3. **智能地删除** 官方仓库中已移除的文件，而不会影响你忽略的文件。
+4. **清理** 任何残留的空文件夹和临时文件。
+5. 使用 `pnpm` **安装或更新** 依赖项。
 
 ## 👀 问题
 
 如果你有任何问题或建议，可以通过提交 Issues 来反馈或同开发者交流！
-

@@ -4,7 +4,10 @@ published: 2025-12-06
 description: 一个简明的 Markdown 博客示例
 tags: [博客, Markdown, Astro]
 category: Astro魔改
+draft: false
+lang: "zh_CN"
 ---
+
 以下是一个在 Astro 中编写 Markdown 内容时可以使用的部分基本 Markdown 语法示例。
 
 ## 1.标题
@@ -33,14 +36,13 @@ Itatur? Quiatae cullecum rem ent aut odis in re eossequodi nonsequ idebis ne sap
 
 #### 语法
 
-
 ```markdown
 ![Alt text](https://zayck-img.pages.dev/file/来自新世界/1764985164363_BandiView_background-light.webp)
 ```
 
 #### 输出
 
-![Alt text](https://zayck-img.pages.dev/file/来自新世界/1764985164363_BandiView_background-light.webp)
+Alt text
 
 ## 4.块引用
 
@@ -58,7 +60,7 @@ Itatur? Quiatae cullecum rem ent aut odis in re eossequodi nonsequ idebis ne sap
 #### 输出
 
 > Tiam, ad mint andaepu dandae nostion secatur sequo quae.
-> **Note** that you can use _Markdown syntax_ within a blockquote.
+> **Note** that you can use *Markdown syntax* within a blockquote.
 
 ### 4.2 有署名的引用
 
@@ -71,8 +73,9 @@ Itatur? Quiatae cullecum rem ent aut odis in re eossequodi nonsequ idebis ne sap
 
 #### 输出
 
-> Don't communicate by sharing memory, share memory by communicating.<br>
-> — <cite>Rob Pike[^1]</cite>
+> Don't communicate by sharing memory, share memory by communicating.  
+>
+> — Rob Pike[^1]
 
 [^1]: The above quote is excerpted from Rob Pike's [talk](https://www.youtube.com/watch?v=PAAkCSZUG1c) during Gopherfest, November 18, 2015.
 
@@ -88,9 +91,11 @@ Itatur? Quiatae cullecum rem ent aut odis in re eossequodi nonsequ idebis ne sap
 
 #### 输出
 
+
 | Italics   | Bold     | Code   |
 | --------- | -------- | ------ |
-| _italics_ | **bold** | `code` |
+| *italics* | **bold** | `code` |
+
 
 ### 4.4 代码块
 
@@ -98,7 +103,7 @@ Itatur? Quiatae cullecum rem ent aut odis in re eossequodi nonsequ idebis ne sap
 
 we can use 3 backticks ``` in new line and write snippet and close with 3 backticks on new line and to highlight language specific syntac, write one word of language name after first 3 backticks, for eg. html, javascript, css, markdown, typescript, txt, bash
 
-````markdown
+```markdown
 ```cpp
 #include <bits/stdc++.h>
 using namespace std;
@@ -127,7 +132,7 @@ int main()
     return 0;
 }
 ```
-````
+```
 
 #### 输出
 
@@ -234,12 +239,12 @@ Most <mark>salamanders</mark> are nocturnal, and hunt for insects, worms, and ot
 
 #### 输出
 
-<abbr title="Graphics Interchange Format">GIF</abbr> is a bitmap image format.
+GIF is a bitmap image format.
 
-H<sub>2</sub>O
+H2O
 
-X<sup>n</sup> + Y<sup>n</sup> = Z<sup>n</sup>
+Xn + Yn = Zn
 
-Press <kbd>CTRL</kbd>+<kbd>ALT</kbd>+<kbd>Delete</kbd> to end the session.
+Press CTRL+ALT+Delete to end the session.
 
-Most <mark>salamanders</mark> are nocturnal, and hunt for insects, worms, and other small creatures.
+Most salamanders are nocturnal, and hunt for insects, worms, and other small creatures.
